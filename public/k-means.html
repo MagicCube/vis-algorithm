@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K-Means Algorithm Demo</title>
+    <link rel="stylesheet" href="assets/sap.a/resource/index.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/km/resource/index.css" charset="utf-8">
+    <script src="assets/vendor/bundle.js" charset="utf-8"></script>
+    <script src="lib/open-ui5/resources/sap-ui-core.js" charset="utf-8"
+            data-sap-ui-resourceroots='{ "km": "./assets/km/" }'></script>
+</head>
+<body>
+    <script>
+    sap.ui.define([ "km/bundle" ], function() {
+        var app = new km.app.Application("km-app");
+        app.placeAt($("body"));
+        app.run();
+    });
+    </script>
+</body>
+</html>
